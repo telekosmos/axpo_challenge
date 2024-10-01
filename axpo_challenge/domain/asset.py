@@ -1,17 +1,16 @@
 import pandas as pd
 
-from axpo_challenge.deps.logger import logger
+from axpo_challenge.adapter.asset_repository import load_assets
 
 class Asset():
   source_url: str = 'https://github.com/axpogroup/hiring-challenges/raw/refs/heads/main/fullstack-time-series-challenge/data/assets.json'
 
   def __init__(self):
-    logger.info('Loading assets...')
-    self.assets = pd.read_json(self.source_url)
-    self.assets.rename(columns={'AssetID': 'AssetId'})
+    self.assets = load_assets(source_url=self.source_url)
 
   def get_asset_from_id(self, asset_id: int) -> pd.DataFrame:
-    return self.assets[self.signals['AssetID'] == asset_id] 
+    return self.assets[self.signals['AssetId'] == asset_id] 
 
   def get_all_assets_id(self) -> pd.Series:
-    return self.assets['AssetID']
+    return self.assets['AssetId']
+  
