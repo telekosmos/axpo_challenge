@@ -4,9 +4,13 @@ Develop a tool that will help us visualize and analyze our time series.
 
 ## Develop
 
-Clone the repo.
+Clone the repo
 
-We use `pyenv` and `poetry` to manage python versions and project depencies and environments, but a _flat_ `requirements.txt` is provided as well. You should create a virtual environment (whatever way you like more) for this project to isolate dependencies, activate the virutal environment and the run `pip install -r requirements.txt` or `poetry install` depending on your tastes.
+`git clone https://github.com/telekosmos/axpo_challenge.git`
+
+We use `pyenv` and `poetry` to manage python versions and project depencies and environments, but a _flat_ `requirements.txt` is provided as well. 
+
+You should create a _virtual environment_ (whatever way you like more) for this project to isolate dependencies. Depending on the tools of your choice, create and activate the virutal environment and then run `pip install -r requirements.txt` or `poetry install` and will create the virtual environment automatically and install the dependencies.
 
 ## Run
 
