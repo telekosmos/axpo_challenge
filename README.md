@@ -33,3 +33,10 @@ Also, downsampling is needed as plotting a huge number of data points in a chart
 Data series also have _gaps_. This one wasn't addressed and techniques to mitigate those gaps (fi needed) is noted to be investigated.
 
 The _dispersion_ of the data around the mean is quite similar for all signals but the mean of the distance between consecutive points is very different given the amount of data points for each serie.
+
+## TODO
+- Some tests (especially e2e, _cypress_ or similar tool should/could be involved)
+- Configuration driven
+- Adapters to load the csv data from other sources
+- Better logging
+- Refactor
